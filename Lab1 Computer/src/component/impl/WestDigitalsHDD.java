@@ -8,5 +8,4 @@ public class WestDigitalsHDD extends HDD{
 		this.setPrice(price);
 		this.setVolume(volume);
 	}
-
 }

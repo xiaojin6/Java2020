@@ -8,5 +8,4 @@ public class SeagateHDD extends HDD{
 		this.setPrice(price);
 		this.setVolume(volume);
 	}
-
 }

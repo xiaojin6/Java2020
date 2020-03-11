@@ -8,5 +8,4 @@ public class GigabyteMotherBoard extends MotherBoard{
 		this.setPrice(price);
 		this.setSpeed(speed);
 	}
-
 }
