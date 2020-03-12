@@ -4,4 +4,13 @@
 
 ### 目录
 
-Lab1 computer
+- Lab 1 OO
+  - 本次实验是考察接口和抽象类的使用。
+
+- Homework 2.1 Singleton
+  - 本次作业是自己设计单例模式。
+
+
+
+
+
