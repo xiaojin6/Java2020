@@ -1,3 +1,5 @@
+package Singleton;
+
 class Singleton {
 
     private static Singleton instance;
