@@ -1,18 +1,18 @@
-public class firstComMul extends ComMul implements Runnable {
+public class FirstComMul extends ComMul implements Runnable {
 
-	public firstComMul() {
+	public FirstComMul() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public firstComMul(Matrix first, Matrix second, double[][] firstM, double[][] secondM) {
+	public FirstComMul(MatrixGenerator first, MatrixGenerator second, double[][] firstM, double[][] secondM) {
 		super(first, second, firstM, secondM);
 		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public void run() {
-		Matrix first = this.getFirst();
-		Matrix second = this.getSecond();
+		MatrixGenerator first = this.getFirst();
+		MatrixGenerator second = this.getSecond();
 		double[][] firstM = this.getFirstM();
 		double[][] secondM = this.getSecondM();
 

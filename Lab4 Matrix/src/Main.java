@@ -4,9 +4,9 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Matrix first = new Matrix(1000, 1002);
+		MatrixGenerator first = new MatrixGenerator(2000, 2002);
 		double[][] firstM = first.Create();
-		Matrix second = new Matrix(1002, 1001);
+		MatrixGenerator second = new MatrixGenerator(2002, 2001);
 		double[][] secondM = second.Create();
 		
 //		Matrix first = new Matrix(3, 5);

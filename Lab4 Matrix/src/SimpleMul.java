@@ -1,7 +1,7 @@
 public class SimpleMul {
 
-	private Matrix first;
-	private Matrix second;
+	private MatrixGenerator first;
+	private MatrixGenerator second;
 	private double[][] firstM;
 	private double[][] secondM;
 
@@ -9,7 +9,7 @@ public class SimpleMul {
 		// TODO Auto-generated constructor stub
 	}
 
-	public SimpleMul(Matrix first, Matrix second, double[][] firstM, double[][] secondM) {
+	public SimpleMul(MatrixGenerator first, MatrixGenerator second, double[][] firstM, double[][] secondM) {
 		super();
 		this.first = first;
 		this.second = second;
@@ -18,8 +18,8 @@ public class SimpleMul {
 	}
 
 	public double[][] simpleMulMethod() {
-		Matrix first = this.first;
-		Matrix second = this.second;
+		MatrixGenerator first = this.first;
+		MatrixGenerator second = this.second;
 		double[][] firstM = this.firstM;
 		double[][] secondM = this.secondM;
 

@@ -1,17 +1,17 @@
 public class ComMul {
 
-	private Matrix first;
-	private Matrix second;
+	private MatrixGenerator first;
+	private MatrixGenerator second;
 	private double[][] firstM;
 	private double[][] secondM;
-	static double[][] result = new double[1000][1001];
+	static double[][] result = new double[2000][2001];
 //	static double[][] result = new double[3][4];
 
 	public ComMul() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public ComMul(Matrix first, Matrix second, double[][] firstM, double[][] secondM) {
+	public ComMul(MatrixGenerator first, MatrixGenerator second, double[][] firstM, double[][] secondM) {
 		super();
 		this.first = first;
 		this.second = second;
@@ -20,31 +20,33 @@ public class ComMul {
 	}
 
 	public void ComMulMethod() throws InterruptedException {
-		Thread thread1 = new Thread(new firstComMul(first, second, firstM, secondM));
-		Thread thread2 = new Thread(new secondComMul(first, second, firstM, secondM));
+		Thread thread1 = new Thread(new FirstComMul(first, second, firstM, secondM));
+		Thread thread2 = new Thread(new SecondComMul(first, second, firstM, secondM));
 		double startTime = System.currentTimeMillis();
 		thread1.start();
 		thread2.start();
 		thread1.join();
 		thread2.join();
+		
 		double endTime = System.currentTimeMillis();
+//		Thread.sleep(50000);
 		double time = endTime - startTime;
 		System.out.println("并行运行时间：" + time);
 	}
 
-	public Matrix getFirst() {
+	public MatrixGenerator getFirst() {
 		return first;
 	}
 
-	public void setFirst(Matrix first) {
+	public void setFirst(MatrixGenerator first) {
 		this.first = first;
 	}
 
-	public Matrix getSecond() {
+	public MatrixGenerator getSecond() {
 		return second;
 	}
 
-	public void setSecond(Matrix second) {
+	public void setSecond(MatrixGenerator second) {
 		this.second = second;
 	}
 
