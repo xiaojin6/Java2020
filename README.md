@@ -13,5 +13,9 @@
   - StringNum
     - 通过args传入String，计数
 
-
-
+- Lab 2 Gatsby
+  - 本次实验考察IO
+- Lab 3 DB
+  - 本次实验考察注解和反射
+- Lab 4 Matrix
+  - 本次实验考察多线程
